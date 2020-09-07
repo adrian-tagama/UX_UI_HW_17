@@ -12,64 +12,137 @@ p {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+button {
+    margin-top: 40px;
+    background-color: transparent;
+    font-size: 14pt;
+    width: fit-content;
+    border: none;
+}
+
+
+
 /* HEADER */
 header {
-    width: 100%;
-    padding: 60px;
+    width: auto;
+    height: auto;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+    border: 1px solid red ;
 }
 .logo {
-    width: 10%;
-    padding-left: 60px;
+    width: 12%;
     text-align: center;
 }
 
 /* nav */
 nav {
-    width: 45%;
-    padding: 0px;
+    width: auto;
+    height: auto;
+    font-size: 12pt;
 }
 nav ul {
-    width: 100%;
-    margin-left: auto;
+    width: auto;
 }
 nav ul li {
-    padding: 40px
+    width: auto;
+    margin: 10px;
 }
 
 /* contact */
-#contact.inline-block {
-    right: 0px;
-    width: 40%;
-    padding: 0px;
+#contact {
+    float: right;
+    padding: 56px 0;
+    width: auto;
+
 }
 
 #contact.inline-block ul li {
-    padding: 10px
+    margin: 10px;
+    text-align: center;
 }
 
+/* --__HOME__-- */
+.tag {
+    height: auto;
+    width: auto;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+.tagline {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14pt;
+    text-align: justify;
+    width: 480px;
+}
+
+/* Projects */
+/* case study component */
+.caseStudyCard {
+    margin-top: 60px;
+    width: 100vw;
+    height: 400px;
+    overflow: hidden;
+}
+
+.caseStudyInfo{
+    margin-left: 70px;
+    width: fit-content;
+    vertical-align: top;
+}
+.caseStudyTitle {
+    font-size: 24pt;
+    font-weight: bold;
+
+}
+
+
+.separator {
+    width:34px;
+    float: left;
+    margin-top: -20px;
+}
+
+/* weTravel card */
+.WeTravel {
+    background-color: #0079fe;
+    color: white;
+}
+#wtHotel {
+    height: 554px;
+    width: 281px;
+    margin-left: 700px;
+    vertical-align: top;
+}
+
+
+
+
+
+/* --__ABOUT__-- */
 /* Hero Image */
-.heroImg {
+.aboutContent {
+    display: flex;
+    justify-content: space-between;
     white-space: nowrap;
-    height: 600px;
-    width: 100%;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
-.content {
+.aboutMe {
     white-space: normal;
     text-align: justify;
     width: 500px;
-    height: 420px;
-    float: left;
-    padding-left: 120px;
+    height: auto;
 }
 
-.me {
-    margin-left: 50%;
-    height: 593px;
-    width: 415px;
-    position: static;
-    padding-left: 88px;
-    padding-top: 20px;
+#mePic {
+    height: auto;
+    width: 593px;
+    margin-top: 20px;
 }
 
 /* FOOTER */
@@ -79,7 +152,7 @@ footer {
     text-align: center;
 }
 
-#tagline {
+#footerTagline {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 24pt;
     font-weight: bold;
