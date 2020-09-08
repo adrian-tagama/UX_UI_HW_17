@@ -24,7 +24,7 @@ button {
 
 /* HEADER */
 header {
-    width: 95%;
+    width: 94%;
     height: auto;
     margin-top: 60px;
     margin-left: 60px;
@@ -252,9 +252,9 @@ nav ul li {
 }
 
 #mePic {
-    height: auto;
-    width: 593px;
+    height: 580px;
     margin-top: 20px;
+    margin-right: -20px;
 }
 
 /* FOOTER */
@@ -290,4 +290,3 @@ footer ul li {
     padding: 10px;
     color: white;
 }
-
