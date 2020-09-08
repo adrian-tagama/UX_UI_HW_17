@@ -29,7 +29,6 @@ header {
     margin-top: 60px;
     margin-left: 60px;
     margin-right: 60px;
-    border: 1px solid red ;
 }
 .logo {
     width: 12%;
@@ -64,6 +63,11 @@ nav ul li {
 }
 
 /* --__HOME__-- */
+.projects {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
 .tag {
     height: auto;
     width: auto;
@@ -74,30 +78,33 @@ nav ul li {
 .tagline {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 14pt;
+    align-items: flex-start;
     text-align: justify;
     width: 480px;
 }
 
 /* Projects */
-/* case study component */
-.caseStudyCard {
-    margin-top: 60px;
-    width: 100vw;
-    height: 400px;
-    overflow: hidden;
-}
 
 .caseStudyInfo{
     margin-left: 70px;
-    width: fit-content;
+    width: 500px;
+    overflow-wrap: normal;
     vertical-align: top;
+    text-align: left;
+}
+
+.caseStudyDescription {
+    font-size: 14pt;
+}
+.caseStudyDate {
+    font-size: 12pt;
+    font-weight: lighter;
 }
 .caseStudyTitle {
     font-size: 24pt;
     font-weight: bold;
 
 }
-
 
 .separator {
     width:34px;
@@ -106,23 +113,133 @@ nav ul li {
 }
 
 /* weTravel card */
-.WeTravel {
+.wt {
     background-color: #0079fe;
+    margin-top: 60px;
+    width: 100vw;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    text-align: right;
     color: white;
 }
-#wtHotel {
-    height: 554px;
-    width: 281px;
-    margin-left: 700px;
-    vertical-align: top;
+
+.wtButton {
+    margin-top: 40px;
+    margin-left: -5px;
+    background-color: transparent;
+    font-size: 14pt;
+    width: fit-content;
+    border: none;
+    color: white;
 }
 
+#wtHotel {
+    height: 654px;
+    width: 351px;
+    position: absolute;
+    top: -9700px;
+    bottom: -9999px;
+    left: -9860px;
+    right: -9999px;
+    margin: auto;
+}
 
+#wtMockups {
+    height: 400px;
+    width: 560px;
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9050px;
+    right: -9999px;
+    margin: auto;
+}
 
+/* Oregon DMV card */
+
+.oregon {
+    background-color: #009D75;
+    width: 100vw;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    text-align: right;
+    color: white;
+}
+
+.dmvButton {
+    margin-top: 40px;
+    margin-left: -5px;
+    background-color: transparent;
+    font-size: 14pt;
+    width: fit-content;
+    border: none;
+    color: white;
+}
+
+#dmvDesktop {
+    height: 366px;
+    position: absolute;
+    top: -9975px;
+    bottom: -9999px;
+    left: -9860px;
+    right: -9999px;
+    margin: auto;
+}
+
+#dmvMobile {
+    height: 356px;
+    position: absolute;
+    top: -9990px;
+    bottom: -9999px;
+    left: -9000px;
+    right: -9999px;
+    margin: auto;
+}
+
+/*  Silicon Beach Social card */
+
+.sbs {
+    background-color: #BCD9E3;
+    width: 100vw;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    text-align: right;
+}
+
+.sbsButton {
+    margin-top: 40px;
+    margin-left: -5px;
+    background-color: transparent;
+    font-size: 14pt;
+    width: fit-content;
+    border: none;
+}
+
+#sbsAbout {
+    height: 300px;
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9860px;
+    right: -9999px;
+    margin: auto;
+}
+
+#sbsEvents {
+    height: 300px;
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9000px;
+    right: -9999px;
+    margin: auto;
+}
 
 
 /* --__ABOUT__-- */
-/* Hero Image */
 .aboutContent {
     display: flex;
     justify-content: space-between;
@@ -147,7 +264,10 @@ nav ul li {
 
 /* FOOTER */
 footer {
+    margin-top: 60px;
     background-color: #760000;
+    width: 100vw;
+    height: auto;
     bottom: 0;
     text-align: center;
 }
