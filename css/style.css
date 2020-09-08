@@ -24,7 +24,7 @@ button {
 
 /* HEADER */
 header {
-    width: auto;
+    width: 95%;
     height: auto;
     margin-top: 60px;
     margin-left: 60px;
@@ -70,17 +70,12 @@ nav ul li {
 }
 .tag {
     height: auto;
-    width: auto;
+    width: 455px;
     margin-left: 60px;
     margin-right: 60px;
-    margin-top: 20px;
-}
-.tagline {
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 14pt;
-    align-items: flex-start;
+    margin-top: 60px;
     text-align: justify;
-    width: 480px;
+    font-size: 14pt;
 }
 
 /* Projects */
